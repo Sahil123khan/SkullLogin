@@ -5,13 +5,14 @@ import Google from "../assets/images/google-Img.png"
 import { useState } from "react";
 const Login = () => {
 
-  
+
   const [loading, setLoading] = useState(false);
 
 
   const handleLogin =  () => {
     setLoading(true);
-    
+
+
     setTimeout(() => {
       setLoading(false);
       alert('Logged in successfully!');
@@ -45,7 +46,7 @@ const Login = () => {
                   Continue with Google Account
                 </button>
 
-                <p className="Email-p">----------or Sign in with Email----------</p>
+                <p className="Email-p">---------or Sign in with Email----------</p>
               </div>
             </div>
 

@@ -1,0 +1,214 @@
+.MainContainer {
+    width: 100vw;
+    height: 100vh;
+    background-color: #FFE6C9;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.LoginContainer {
+    width: 60%;
+    min-height: 60%;
+    display: flex;
+    box-shadow: 0px 0px 30px 0px rgba(134, 129, 129, 0.75);
+    border-radius: 20px;
+}
+
+.FirstContainer {
+    width: 50%;
+}
+
+.FirstContainer img {
+    max-width: 110%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    position: relative;
+
+}
+
+.SecondContainer {
+    width: 50%;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.LoginCenter {
+    width: 70%;
+    height: 90%;
+}
+
+.LoginPageImage img {
+    width: 20%;
+}
+
+.MainLoginHeader h1 {
+    color: #525252;
+    line-height: 1.2em;
+    font-size: 1.3rem;
+}
+
+.MainLoginHeader p {
+    letter-spacing: 0.5px;
+    font-size: 0.6rem;
+}
+
+.MainLoginHeader button {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    border: 0.1px solid rgb(244, 235, 235);
+    font-size: 10px;
+    color: #828282;
+    font-weight: 700;
+}
+
+.MainLoginHeader img {
+    margin-right: 5px;
+    width: 2em;
+}
+
+.Email-p {
+    text-align: center;
+    margin: 15px 0px 10px 0px;
+    font-weight: 600;
+    color: #828282;
+
+}
+
+.LoginInputDiv {
+    width: 100%;
+    height: auto;
+}
+
+.LoginInputDiv input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+
+}
+
+.LoginInputDiv h4 {
+    color: #828282;
+
+}
+
+.checkboxDiv {
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.checkboxDiv input {
+    width: 15%;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.checkboxDiv label {
+    font-size: 10px;
+}
+
+.checkboxDiv a {
+    font-size: 10px;
+    text-decoration: none;
+    color: #7F265B;
+    font-weight: 700;
+}
+
+.LoginInputDiv button {
+    width: 100%;
+    background-color: #7F265B;
+    color: white;
+    border: none;
+    min-height: 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+
+}
+
+@media screen and (max-width:1265px) {
+    .LoginInputDiv button {
+        margin-top: auto;
+    }
+
+    .LoginInputDiv input {
+
+        padding: 5px;
+        margin-bottom: 6px;
+
+    }
+
+    .MainLoginHeader h1 {
+
+        line-height: 1.0em;
+        font-size: 1.2rem;
+    }
+
+    .MainLoginHeader p {
+        letter-spacing: 0.2px;
+        font-size: 0.6rem;
+    }
+
+    .Email-p {
+        margin: 10px 0px 10px 0px;
+
+    }
+}
+
+@media screen and (max-width:1070px) {
+    .MainLoginHeader h1 {
+        font-size: 1.1rem;
+    }
+
+    .MainLoginHeader button {
+        margin-top: 7px;
+    }
+
+    .Email-p {
+        margin: 7px 0px 7px 0px;
+
+    }
+
+}
+/* 
+@media screen and (max-width:1000px) {
+    .LoginContainer {
+        flex-wrap: wrap;
+        display: block;
+
+    }
+
+    .FirstContainer {
+        width: 100%
+    }
+
+    .FirstContainer img {
+        max-width: 100%;
+
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        position: relative;
+
+    }
+
+    .SecondContainer {
+        width: 100%;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+
+    }
+
+
+} */

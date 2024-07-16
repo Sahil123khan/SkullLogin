@@ -46,7 +46,7 @@ const Login = () => {
                   Continue with Google Account
                 </button>
 
-                <p className="Email-p">---------or Sign in with Email----------</p>
+                <p className="Email-p">--------or Sign in with Email---------</p>
               </div>
             </div>
 

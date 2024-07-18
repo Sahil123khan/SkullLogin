@@ -3,20 +3,22 @@ import skull from "../assets/images/skullImg.png"
 import FourCorner from "../assets/images/FourCorner.png"
 import Google from "../assets/images/google-Img.png"
 import { useState } from "react";
+import { Form, Link, Navigate, useNavigate } from "react-router-dom";
 const Login = () => {
 
 
   const [loading, setLoading] = useState(false);
 
 
-  const handleLogin =  () => {
+  let Navigate = useNavigate()
+  const handleLogin = () => {
     setLoading(true);
 
 
     setTimeout(() => {
       setLoading(false);
-      alert('Logged in successfully!');
-  }, 2000); 
+      alert('Loging successfully')
+    }, 1000);
   };
   return (
     <header className="MainContainer">
@@ -52,30 +54,37 @@ const Login = () => {
 
             <div className="LoginInputDiv">
 
-               <div>
-               <h4>Email</h4>
-             <input type="text" placeholder="Enter Email"/>
+              <div>
+                <h4>Email</h4>
+                <input type="text" placeholder="Enter Email" />
 
-             <h4>Password</h4>
-             <input type="password" placeholder="Enter Password"/>
-               </div>
-            
-
-             <div className="checkboxDiv">
-
-              <div style={{display:"flex",alignItems:"center"}}>
-              <input   id="mybox" type="checkbox"/>
-              <label for="mybox" >Remember me</label>
+                <h4>Password</h4>
+                <input type="password" placeholder="Enter Password" />
               </div>
-            
-              <a href="./">Forgot Password</a>
 
-             </div>
 
-             <button  type="submit" onClick={handleLogin}  >
-              {  loading ? 'Logging in...' : 'Login'}
-             </button>
-            
+              <div className="checkboxDiv">
+
+                <div style={{ display: "flex", alignItems: "center" }}>
+                  <input id="mybox" type="checkbox" />
+                  <label for="mybox" >Remember me</label>
+                </div>
+
+                <a href="./">Forgot Password</a>
+
+              </div>
+
+              <button type="submit" onClick={() => {
+                handleLogin()
+                Navigate('./Earth');
+              }}  >
+
+                {loading ? 'Logging in...' : 'Login'}
+              </button>
+
+
+
+
             </div>
 
           </div>
